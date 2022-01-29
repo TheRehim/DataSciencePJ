@@ -24,7 +24,6 @@ mng = plt.get_current_fig_manager()
 mng.full_screen_toggle()
 
 bitcoin.isnull().sum()
-# bitcoin['Dates'] = pd.to_datetime(bitcoin['Timestamp'], unit='s')
 bitcoin.head()
 bitcoin.dropna(inplace=True)
 required_features = ['Open', 'High', 'Low', 'Volume_(BTC)', 'Volume_(Currency)', 'Weighted_Price']
